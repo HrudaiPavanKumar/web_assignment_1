@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata with Photo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: linear-gradient(135deg, #e66465, #9198e5);
+            color: #ffffff;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .biodata-container {
+            max-width: 700px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 25px;
+            border: 2px solid #ffffff;
+            border-radius: 15px;
+            text-align: left;
+        }
+        
+        .header {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        
+        .profile-img img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .header h1 {
+            font-size: 2rem;
+            margin: 5px 0;
+        }
+        
+        .header p {
+            font-size: 1rem;
+            margin: 5px 0;
+            opacity: 0.8;
+        }
+        
+        h2 {
+            margin: 15px 0;
+            color: #ffcc00;
+            border-bottom: 3px solid #ffcc00;
+            font-size: 1.5rem;
+            display: inline-block;
+        }
+        
+        section {
+            margin: 15px 0;
+        }
+        
+        ul {
+            list-style: square;
+            padding-left: 20px;
+        }
+        
+        ul li {
+            margin: 5px 0;
+            font-size: 1rem;
+        }
+        
+        ul li strong {
+            color: #ffcc00;
+        }
+        
+        .btn {
+            display: block;
+            width: fit-content;
+            margin: 20px auto 0;
+            background: #ffcc00;
+            color: #000;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 1rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .btn:hover {
+            transform: scale(1.1);
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 20px;
+            }
+            .biodata-container {
+                padding: 15px;
+            }
+            .profile-img img {
+                width: 80px;
+                height: 80px;
+            }
+            .header h1 {
+                font-size: 1.5rem;
+            }
+            .btn {
+                font-size: 0.9rem;
+                padding: 8px 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="biodata-container">
+        <header class="header">
+            <!-- Profile Picture -->
+            <div class="profile-img">
+                <img src="harsha.jpg" alt="Profile Picture">
+            </div>
+            <h1>Harsha S</h1>
+            <p>Frontend Web Developer</p>
+        </header>
+        <section class="personal-info">
+            <h2>Personal Information</h2>
+            <ul>
+                <li><strong>Father's Name:</strong>Shambhulinga Sangur</li>
+                <li><strong>Mother's Name:</strong>Jyothi Sangur</li>
+                <li><strong>Date of Birth:</strong> May 24, 2004</li>
+                <li><strong>Gender:</strong> Male</li>
+                <li><strong>Email:</strong> harshasangur@gmail.com</li>
+                <li><strong>Phone:</strong> 8105229625</li>
+                <li><strong>Address:</strong> Shivamogga, Karnataka, India</li>
+                <li><strong>Nationality:</strong> Indian</li>
+            </ul>
+        </section>
+        <section class="hero">
+            <a href="resume.html" class="btn">View My Resume</a>
+        </section>
+    </div>
+</body>
+
+</html>
